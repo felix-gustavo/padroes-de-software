@@ -1,6 +1,10 @@
 public class MoedaBrasil extends Moeda {
+    public MoedaBrasil(double valor) {
+        super(valor);
+    }
+
     @Override
     public String toString() {
-        return "R$ " + super.valor;
+        return String.format("R$ %,.2f", super.valor);
     }
 }

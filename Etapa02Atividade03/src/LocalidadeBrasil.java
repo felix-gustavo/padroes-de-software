@@ -1,11 +1,11 @@
 public class LocalidadeBrasil extends LocalidadeAbstractFactory {
     @Override
-    public Data getData() {
-        return new DataBrasil();
+    public Data getData(int dia, int mes, int ano) {
+        return new DataBrasil(dia, mes, ano);
     }
 
     @Override
-    public Moeda getMoeda() {
-        return new MoedaBrasil();
+    public Moeda getMoeda(double valor) {
+        return new MoedaBrasil(valor);
     }
 }
