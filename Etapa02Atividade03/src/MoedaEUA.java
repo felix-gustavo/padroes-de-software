@@ -1,4 +1,5 @@
-import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class MoedaEUA extends Moeda {
     public MoedaEUA(double valor) {
@@ -7,6 +8,7 @@ public class MoedaEUA extends Moeda {
 
     @Override
     public String toString() {
-        return String.format("$ %.2f", super.valor);
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);
+        return nf.format(super.valor);
     }
 }

@@ -8,6 +8,4 @@ public abstract class Data {
         this.mes = mes;
         this.ano = ano;
     }
-
-//    ENUM
 }

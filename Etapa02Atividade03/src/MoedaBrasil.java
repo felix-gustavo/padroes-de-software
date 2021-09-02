@@ -1,3 +1,6 @@
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class MoedaBrasil extends Moeda {
     public MoedaBrasil(double valor) {
         super(valor);
@@ -5,6 +8,7 @@ public class MoedaBrasil extends Moeda {
 
     @Override
     public String toString() {
-        return String.format("R$ %,.2f", super.valor);
+        NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt","BR"));
+        return nf.format(super.valor);
     }
 }

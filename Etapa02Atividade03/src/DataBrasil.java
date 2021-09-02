@@ -1,6 +1,5 @@
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 public class DataBrasil extends Data {
@@ -10,14 +9,9 @@ public class DataBrasil extends Data {
 
     @Override
     public String toString() {
-        Calendar c = Calendar.getInstance();
-        c.set(super.ano, super.mes, super.dia);
-
-        String diaDaSemana = new SimpleDateFormat("EEE").format(c.getTime());
-
-        return diaDaSemana.substring(0, 1).toUpperCase() + diaDaSemana.substring(1)
-                + ", " + super.dia
-                + " de " + Mes.getMes(super.mes).getNomeBR()
-                + " de " + super.ano;
+        LocalDate ld = LocalDate.of(super.ano, super.mes, super.dia);
+        String data = ld.format(DateTimeFormatter.ofPattern("EEE, dd 'de' MMMM 'de' yyyy", new Locale("pt", "BR")));
+ 
+        return data.substring(0, 1).toUpperCase().concat(data.substring(1));
     }
 }
