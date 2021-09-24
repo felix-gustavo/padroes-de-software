@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class BingoSystem {
+public class BingoSystem implements Subject {
     private static BingoSystem uniqueInstance;
     private List<Observer> bingoCards;
     private int numberDrawn;
@@ -19,11 +19,13 @@ public class BingoSystem {
         return uniqueInstance;
     }
 
+    @Override
     public void subscribe(Observer observer) {
         this.bingoCards.add(observer);
     }
 
-    private void notifyObservers() {
+    @Override
+    public void notifyObservers() {
         this.bingoCards.forEach(bingo -> bingo.update(this.numberDrawn));
     }
 
