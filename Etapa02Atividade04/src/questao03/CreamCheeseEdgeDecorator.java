@@ -12,6 +12,6 @@ public class CreamCheeseEdgeDecorator extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return "CreamCheeseEdge";
+        return this.getDecoratedPizza().getDescription() + ", CreamCheeseEdge";
     }
 }

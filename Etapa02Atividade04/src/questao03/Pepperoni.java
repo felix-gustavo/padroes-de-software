@@ -8,4 +8,9 @@ public class Pepperoni extends Pizza {
     public double cost() {
         return 14.9;
     }
+
+    @Override
+    public String getDescription() {
+        return "Pepperoni " + super.getDescription();
+    }
 }

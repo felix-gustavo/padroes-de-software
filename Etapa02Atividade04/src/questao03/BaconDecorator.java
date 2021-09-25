@@ -12,6 +12,6 @@ public class BaconDecorator extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return "Bacon";
+        return this.getDecoratedPizza().getDescription() + ", Bacon";
     }
 }

@@ -12,6 +12,6 @@ public class OreganoDecorator extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return "Oregano";
+        return this.getDecoratedPizza().getDescription() + ", Oregano";
     }
 }
