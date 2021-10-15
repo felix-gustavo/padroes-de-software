@@ -8,7 +8,7 @@ public class Requisicao extends Document {
 
     @Override
     public String toString() {
-        return "REQUISIÇÃO\n" + super.formatar();
+        return "REQUISIÇÃO\n" + formatar();
     }
 
     

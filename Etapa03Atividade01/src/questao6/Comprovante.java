@@ -8,6 +8,6 @@ public class Comprovante extends Document {
 
     @Override
     public String toString() {
-        return "COMPROVANTE\n" + this.formatar();
+        return "COMPROVANTE\n" + formatar();
     }
 }
