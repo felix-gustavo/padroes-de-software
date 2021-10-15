@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Etapa02Atividade01/Etapa02Atividade01.iml" filepath="$PROJECT_DIR$/Etapa02Atividade01/Etapa02Atividade01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Etapa02Atividade02/Etapa02Atividade02.iml" filepath="$PROJECT_DIR$/Etapa02Atividade02/Etapa02Atividade02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Etapa02Atividade03/Etapa02Atividade03.iml" filepath="$PROJECT_DIR$/Etapa02Atividade03/Etapa02Atividade03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Etapa02Atividade04/Etapa02Atividade04.iml" filepath="$PROJECT_DIR$/Etapa02Atividade04/Etapa02Atividade04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Etapa03Atividade01/Etapa03Atividade01.iml" filepath="$PROJECT_DIR$/Etapa03Atividade01/Etapa03Atividade01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/padroes-de-software.iml" filepath="$PROJECT_DIR$/.idea/padroes-de-software.iml" />
+    </modules>
+  </component>
+</project>
